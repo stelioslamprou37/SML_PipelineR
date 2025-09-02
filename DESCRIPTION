@@ -1,0 +1,31 @@
+Package: OmicsMLPipeline
+Type: Project
+Title: Machine Learning Pipeline for Omics Data
+Version: 0.1.0
+Author: Your Name
+Maintainer: Your Email
+Description: 
+  A general machine learning and deep learning pipeline for tabular omics data 
+  (proteomics, transcriptomics, metabolomics). Implements preprocessing, feature 
+  selection, model training (Random Forest, Gradient Boosting, Neural Networks), 
+  evaluation, and consensus biomarker signature discovery. Tested on ENSAT-HT 
+  transcriptomics and Bio-Hermes proteomics.
+License: MIT
+Encoding: UTF-8
+LazyData: true
+
+Depends:
+    R (>= 4.1.0)
+
+Imports:
+    caret,
+    randomForest,
+    xgboost,
+    nnet,
+    tidyverse,
+    pROC,
+    VennDiagram
+
+Suggests:
+    knitr,
+    rmarkdown
